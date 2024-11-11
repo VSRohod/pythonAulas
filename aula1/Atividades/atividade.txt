@@ -1,0 +1,17 @@
+// coletem dados do usuario para que salvem as seguintes informações, nome , 
+// sobrenome , idade , ano de nascimento, maior de idade , altura em metros
+// e no final mostre na tela os dados previamente salvos!
+
+nome = 'Victor'
+sobrenome = 'Santos Rohod'
+idade = 21
+ano_nascimento = 2024 - idade
+maior_de_idade = idade >= 18
+altura_metros = 1.80
+
+print('Nome: ', nome)
+print('Sobrenome: ', sobrenome)
+print('Idade: ', idade)
+print('Ano de nascimento: ', ano_nascimento)
+print('É maior de idade: ', maior_de_idade)
+print('Altura em metros: ', altura_metros)
