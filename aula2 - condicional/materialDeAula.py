@@ -100,3 +100,15 @@ else:
 # Avaliação de curso circuito
 print(True and False and True)
 print(True and 0 and True)
+
+# case
+
+escolha = input('Digite a b ou c')
+
+match escolha:
+    case 'a':
+        print('aaaaaaa')
+    case 'b':
+        print('bbbbbbb')
+    case 'c':
+        print('cccccccccccc')
