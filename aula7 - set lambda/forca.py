@@ -7,8 +7,13 @@ tentativas = 6  # Número máximo de erros
 print("Bem-vindo ao Jogo da Forca!")
 
 while tentativas > 0 and letras_palavra:
-    # Exibe o estado atual da palavra com letras reveladas
-    palavra_exibida = [letra if letra in letras_digitadas else "_" for letra in palavra_secreta]
+    # Exibe o estado atual da palavra
+    palavra_exibida = []
+    for letra in palavra_secreta:
+        if letra in letras_digitadas:
+            palavra_exibida.append(letra)
+        else:
+            palavra_exibida.append("_")
     print("Palavra:", " ".join(palavra_exibida))
 
     # Pede ao usuário uma letra
