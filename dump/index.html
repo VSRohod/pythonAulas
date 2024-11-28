@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+
+</head>
+
+<body>
+    <h1>Lista de Exemplos e Exercícios</h1>
+    <ul>
+
+        <script>
+            const arquivos = ["livrojs/cap01/exe1_1.html",
+                "livrojs/cap01/exe1_2.html",
+                "livrojs/cap01/exe1_3.html",
+                "livrojs/cap01/exe1_4.html",
+                "livrojs/cap01/exe1_5.html",
+                "livrojs/cap01/exe1_6.html",
+                "livrojs/cap01/exe1_7.html",
+                "livrojs/cap01/exe1_8.html",
+                "livrojs/cap01/resp1_a.html",
+                "livrojs/cap01/resp1_b.html",
+                "livrojs/cap01/resp1_c.html",
+                "livrojs/cap01/resp1_d.html",
+                "livrojs/cap02/exe2_1.html",
+                "livrojs/cap02/exe2_2.html",
+                "livrojs/cap04/exe4_1.html",
+                "livrojs/cap04/exe4_2.html",
+                "livrojs/cap04/exe4_3.html",
+                "livrojs/cap04/resp4_b.html",
+                "livrojs/cap04/resp4_c.html",
+                "livrojs/cap04/resp4_d.html",
+                "livrojs/cap05/exe5_0.html"]
+            let cap = ""
+            for (let i = 0; i < arquivos.length; i++) {
+                let url = arquivos[i].split("/")
+                if(cap != url[1]){
+                    cap = url[1]
+                    document.write(`<h3>${cap.replace("cap","Capítulo ")}</h3>`)
+                }
+                let link = arquivos[i]
+                    .substring(14)
+                    .replace(".html", "")
+                    .replace("exe", "Exemplo ")
+                    .replace("resp","Resposta ")
+                    .replace("_",".")
+                document.write(`<li><a href="${arquivos[i]}">${link}</a></li>`);
+            }
+
+        </script>
+    </ul>
+</body>
+
+</html>
