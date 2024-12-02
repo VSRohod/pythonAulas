@@ -17,6 +17,9 @@
 # Abra a pasta do seu projeto no terminal
 # e digite:
 # python -m venv venv
+python -m venv venv
+gcm python -Syntax
+Wich python
 
 # Abra a pasta do seu projeto no terminal
 # e digite:
