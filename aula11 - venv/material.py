@@ -37,6 +37,7 @@ Wich python
 # pip - instalando pacotes e bibliotecas
 # Instalar última versão:
 # pip install nome_pacote
+pip install pymysql
 # Instalar versão precisa
 # (tem outras formas também não mencionadas)
 # pip install nome_pacote==0.0.0
