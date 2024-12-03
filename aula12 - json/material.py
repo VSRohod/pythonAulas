@@ -27,6 +27,10 @@ caminho_arquivo = 'aula116.txt'
 # #
 # arquivo.close()
 
+with open(caminho_arquivo, 'w') as arquivo:
+    print('Olá mundo')
+    print('Arquivo fechado')
+
 # with open(caminho_arquivo, 'w+') as arquivo:
 #     arquivo.write('Linha 1\n')
 #     arquivo.write('Linha 2\n')
